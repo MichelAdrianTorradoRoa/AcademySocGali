@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="academy.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <center><h1>AcademySocGali</h1></center>
+    <center><p>Bienvenidos a la plataforma AcademySocGali, en donde podras agregar, editar y eliminar los cursos de las diferentes areas tematicas que estan en oferta.</p></center>
+    <div>
+        <table>
+            <tr>
+                <td>Cursos Ofertados</td>
+                <td><center>Descripcion</center></td>
+                <td>Contenido</td>
+            </tr>
+            <tr>
+                <td>Arte</td>
+                <td>Se les enseñara sobre como utilizar los diferentes estilos de dibujo y manualidades a mano</td>
+                <td>
+                    <li>Iniciacion al dibujo</li>
+                    <li>Tecnicas del dibujo</li>
+                    <li>Manualidades apartir del reciclaje</li>
+                </td>
+            </tr>
+            <tr>
+                <td>Musica</td>
+                <td>En este curso, podras profundizar sobre la teoria musical y se partira la enseñanza de los instrumentos de aire, de cuerda, de percusion y la voz</td>
+                <td>
+                    <li>Principios de la Teoria Musical</li>
+                    <li>Reconocimiento de las partes del instrumento escogido por el estudiante</li>
+                    <li>Las Buenas Practicas y Cuidado del Instrumento</li>
+                </td>
+            </tr>
+            <tr>
+                <td>Programacion</td>
+                <td>Apartir de este curso, se podra crear aplicativos funcionales de un fullstack en los lenguajes de programacion mas solicitados por el mercado</td>
+                <td>
+                    <li>Los comienzos de la programacion y practica de la logica de programacion(Pseint)</li>
+                    <li>Manejo de Python</li>
+                    <li>Produccion y creacion de una pagina web con HTML y CSS</li>
+                </td>
+            </tr>
+        </table>
+        <h2>Menu de opciones</h2>
+        <form name="Modificaciones" method="post" action="/send" accept-charset="utf-8">
+            <pre>Escoger una unica opcion de los cursos que desea eliminar, modificar o agregar otro nuevo</pre>
+            <input type="radio">Arte
+            <input type="radio">Musica
+            <input type="radio">Programacion
+            <input type="radio">Agregar otro curso
+            <input type="submit">
+        </form>
+        <form name="Buscar" method="get" action="/search" accept-charset="utf-8">
+            <pre>De las siguientes escoger la accion que deseas realizar:</pre>
+            <input type="radio">Buscar por el nombre del curso
+            <input type="radio">Buscar por el area tematica
+            <input type="submit">
+    </div>
 </body>
 </html>
