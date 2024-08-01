@@ -23,23 +23,14 @@ console.log(aliascurso1)
 console.log(aliascurso2)
 console.log(aliascurso3)
 
-function  datos(data){
-    if(data===null){
-        console.log('No se recibieron datos.');
-        return;
-    }
 
-    // Mostrar datos según el formato
-    if (data.timeline) {
-        console.log('Datos de la línea de tiempo:', data.timeline);
-    } else if (Array.isArray(data)) {
-        console.table(data); // Muestra los datos como una tabla en la consola
-    } else if (typeof data === 'object') {
-        console.log('Datos recibidos:', data);
-    } else {
-        console.log('Datos no reconocidos:', data);
-    }
-}
+const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(jsonData)
+  };
 
 
 
@@ -47,7 +38,7 @@ function  datos(data){
 
 
 
-async function buscarDatosSegunCondicion(endpoint, field, condition, value) {
+async function buscarDatosSegunCondicion(tipo, ) {
     const data = await fetchData(endpoint);
     if (data) {
         let filteredData;
@@ -60,8 +51,8 @@ async function buscarDatosSegunCondicion(endpoint, field, condition, value) {
     }
 }
 
-let endpoint19 = '/continents';
-            let field19 = prompt('Ingrese el campo a buscar (cases, deaths, recovered, vaccines): ');
-            let condition19 = prompt('Ingrese la condición (mayor o menor): ');
-            let value19 = prompt('Ingrese el valor: ');
-            await buscarDatosSegunCondicion(endpoint19, field19, condition19, value19);
+let  = ;
+            let fi = prompt('Ingrese el ca: ');
+            let conditi= prompt('Ingrese la condición (mayor o menor): ');
+            let valu = prompt('Ingrese el valor: ');
+            await buscarDatosSegunCondicion(endpo);
